@@ -1,0 +1,80 @@
+{
+  "model_name": "SARVisionMicroNet-v1",
+  "architecture": "sarvision_micro_cnn",
+  "onnx_file": "sarvision_micro_detector.onnx",
+  "opset_version": 17,
+  "parameter_count": 193085,
+  "model_size_kb": 756.48,
+  "input_name": "input",
+  "output_name": "logits",
+  "input_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "color_format": "RGB",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "classes": [
+    "background",
+    "person",
+    "life_raft",
+    "vehicle",
+    "distress_marker"
+  ],
+  "foreground_classes": {
+    "1": "person",
+    "2": "life_raft",
+    "3": "vehicle",
+    "4": "distress_marker"
+  },
+  "training": {
+    "synthetic_dataset": true,
+    "samples_total": 9720,
+    "train_samples": 7776,
+    "val_samples": 1944,
+    "epochs": 24,
+    "final_train_loss": 0.1929,
+    "best_val_accuracy": 0.999,
+    "per_class_validation": {
+      "background": {
+        "precision": 1.0,
+        "recall": 0.9958,
+        "support": 472
+      },
+      "person": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 370
+      },
+      "life_raft": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 382
+      },
+      "vehicle": {
+        "precision": 0.9945,
+        "recall": 1.0,
+        "support": 360
+      },
+      "distress_marker": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 360
+      }
+    }
+  },
+  "onnx_parity_max_abs_diff": 1.430511474609375e-06,
+  "exported_at": "2026-11-18T03:03:39.598502+00:00"
+}

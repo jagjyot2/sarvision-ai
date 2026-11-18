@@ -1,0 +1,248 @@
+{
+  "info": {
+    "description": "SYNTHETIC SARVision Aerial Search & Rescue Evaluation Dataset (Clearly labeled synthetic test imagery \u2014 non-operational).",
+    "version": "1.0.0",
+    "synthetic": true,
+    "date_created": "2026-11-18T02:53:04.927674+00:00",
+    "seed": 20261118
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "person",
+      "supercategory": "sar_target"
+    },
+    {
+      "id": 2,
+      "name": "life_raft",
+      "supercategory": "sar_target"
+    },
+    {
+      "id": 3,
+      "name": "vehicle",
+      "supercategory": "sar_target"
+    },
+    {
+      "id": 4,
+      "name": "distress_marker",
+      "supercategory": "sar_target"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "file_name": "sar_wilderness_clearing.jpg",
+      "width": 1920,
+      "height": 1280,
+      "synthetic": true,
+      "exif_gps": {
+        "latitude": 47.45128,
+        "longitude": -121.41264,
+        "altitude_agl_m": 115.0,
+        "heading_deg": 35.0,
+        "gimbal_pitch_deg": -90.0,
+        "focal_35mm": 28
+      }
+    },
+    {
+      "id": 2,
+      "file_name": "sar_maritime_openwater.jpg",
+      "width": 1920,
+      "height": 1280,
+      "synthetic": true,
+      "exif_gps": {
+        "latitude": 36.79842,
+        "longitude": -122.02418,
+        "altitude_agl_m": 130.0,
+        "heading_deg": 115.0,
+        "gimbal_pitch_deg": -90.0,
+        "focal_35mm": 28
+      }
+    },
+    {
+      "id": 3,
+      "file_name": "sar_alpine_snowfield.jpg",
+      "width": 1920,
+      "height": 1280,
+      "synthetic": true,
+      "exif_gps": {
+        "latitude": 46.81495,
+        "longitude": -121.73211,
+        "altitude_agl_m": 105.0,
+        "heading_deg": 310.0,
+        "gimbal_pitch_deg": -90.0,
+        "focal_35mm": 28
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "category_name": "person",
+      "bbox": [
+        619.0,
+        564.0,
+        26.0,
+        30.0
+      ],
+      "area": 780.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "image_id": 1,
+      "category_id": 3,
+      "category_name": "vehicle",
+      "bbox": [
+        770.0,
+        676.0,
+        99.0,
+        75.0
+      ],
+      "area": 7425.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "image_id": 1,
+      "category_id": 4,
+      "category_name": "distress_marker",
+      "bbox": [
+        1305.0,
+        610.0,
+        71.0,
+        65.0
+      ],
+      "area": 4615.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "image_id": 1,
+      "category_id": 1,
+      "category_name": "person",
+      "bbox": [
+        1352.0,
+        363.0,
+        27.0,
+        29.0
+      ],
+      "area": 783.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "image_id": 2,
+      "category_id": 2,
+      "category_name": "life_raft",
+      "bbox": [
+        456.0,
+        449.0,
+        77.0,
+        63.0
+      ],
+      "area": 4851.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "image_id": 2,
+      "category_id": 2,
+      "category_name": "life_raft",
+      "bbox": [
+        1059.0,
+        613.0,
+        63.0,
+        55.0
+      ],
+      "area": 3465.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "image_id": 2,
+      "category_id": 1,
+      "category_name": "person",
+      "bbox": [
+        777.0,
+        848.0,
+        29.0,
+        28.0
+      ],
+      "area": 812.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "image_id": 2,
+      "category_id": 4,
+      "category_name": "distress_marker",
+      "bbox": [
+        1486.0,
+        309.0,
+        68.0,
+        62.0
+      ],
+      "area": 4216.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "image_id": 3,
+      "category_id": 1,
+      "category_name": "person",
+      "bbox": [
+        546.0,
+        399.0,
+        28.0,
+        31.0
+      ],
+      "area": 868.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "image_id": 3,
+      "category_id": 1,
+      "category_name": "person",
+      "bbox": [
+        1268.0,
+        734.0,
+        26.0,
+        30.0
+      ],
+      "area": 780.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "image_id": 3,
+      "category_id": 4,
+      "category_name": "distress_marker",
+      "bbox": [
+        895.0,
+        864.0,
+        72.0,
+        64.0
+      ],
+      "area": 4608.0,
+      "iscrowd": 0
+    },
+    {
+      "id": 12,
+      "image_id": 3,
+      "category_id": 3,
+      "category_name": "vehicle",
+      "bbox": [
+        1494.0,
+        479.0,
+        100.0,
+        69.0
+      ],
+      "area": 6900.0,
+      "iscrowd": 0
+    }
+  ]
+}
