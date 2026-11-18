@@ -11,8 +11,8 @@ env/
 .coverage
 htmlcov/
 *.egg-info/
-dist/
-build/
+/dist/
+/build/
 
 # Database & Local State
 *.db
